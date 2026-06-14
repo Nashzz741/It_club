@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* Paksa semua kontainer utama menggunakan smooth scroll 
+html, 
+body, 
+#root {
+  scroll-behavior: smooth !important;
+} */
+
+section {
+  scroll-margin-top: 80px;
+}
