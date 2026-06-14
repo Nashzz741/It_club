@@ -18,11 +18,12 @@ function App() {
     }
   }, [darkMode]);
 
+  // src/App.jsx
   return (
+    // JANGAN ADA class 'overflow-hidden' atau 'overflow-y-hidden' di div ini!
     <div className="bg-white text-gray-900 dark:bg-[#0d0f14] dark:text-gray-100 min-h-screen transition-colors duration-300 font-sans">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
-      {/* ⚠️ CRITICAL: Pastikan id di bawah ini SAMA PERSIS dengan id yang ada di Navbar.jsx ⚠️ */}
       <section id="home">
         <Hero />
       </section>

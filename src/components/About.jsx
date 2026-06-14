@@ -1,14 +1,15 @@
+// src/components/About.jsx
 import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="bg-gray-50 dark:bg-[#11141a] py-20 transition-colors">
-      <div className="max-w-4xl mx-auto px-4 text-center space-y-4">
+    <div className="bg-gray-50 dark:bg-[#11141a] py-16 md:py-20 transition-colors">
+      <div className="max-w-4xl mx-auto px-6 text-center space-y-4">
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-2xl font-bold text-blue-600 dark:text-blue-400"
+          className="text-xl md:text-2xl font-bold text-blue-600 dark:text-blue-400"
         >
           Tentang IT Club SMKN 1 Subang
         </motion.h2>
@@ -17,7 +18,8 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-gray-600 dark:text-gray-300 leading-relaxed text-base"
+          // text-sm di HP agar tidak capek bacanya, md:text-base di laptop
+          className="text-sm md:text-base text-gray-600 dark:text-gray-300 leading-relaxed"
         >
           IT Club SMKN 1 Subang adalah wadah bagi siswa-siswi yang memiliki minat
           besar dalam dunia teknologi informasi. Kami bukan sekadar
